@@ -28,6 +28,5 @@ dist-ssr
 .env.*
 !.env.example
 
-# Exclude all PDFs (as requested)
 *.pdf
 RegionalShield_AI_Phase1_Proposal.pdf
