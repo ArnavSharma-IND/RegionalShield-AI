@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    border-color: rgba(255, 255, 255, 0.07);
+  }
+
+  body {
+    background-color: #05070A;
+    color: #F4F5F6;
+    font-family: 'Space Grotesk', -apple-system, sans-serif;
+    letter-spacing: -0.01em;
+  }
+
+  /* Minimal custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #05070A;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1A222C;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #C81B1C;
+  }
+}
+
+/* Atmospheric Cyber Background Scrim */
+.cyber-canvas-scrim {
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(110, 143, 174, 0.04) 0%, transparent 60%),
+    radial-gradient(circle at 100% 100%, rgba(200, 27, 28, 0.03) 0%, transparent 50%);
+}
+
+.thin-line {
+  border-color: rgba(255, 255, 255, 0.07);
+}
+
+.thin-line-highlight {
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+.thin-line-red {
+  border-color: rgba(200, 27, 28, 0.4);
+}
+
+/* Sharp Technical Panels */
+.sharp-panel {
+  background: #0A0E13;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.sharp-panel-elevated {
+  background: #0D131A;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Scan laser animation */
+@keyframes laser-sweep {
+  0% { transform: translateY(-100%); opacity: 0; }
+  50% { opacity: 0.8; }
+  100% { transform: translateY(1000%); opacity: 0; }
+}
+
+.animate-laser {
+  animation: laser-sweep 2.5s ease-in-out infinite;
+}
+
+/* Text Mask Reveal Transitions */
+.clip-reveal {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* Indic Script Unicode optimization */
+.font-indic {
+  font-family: 'Noto Sans Bengali', 'Noto Sans Devanagari', 'Noto Sans Tamil', 'Noto Sans Telugu', 'Space Grotesk', sans-serif;
+  letter-spacing: 0.01em;
+  line-height: 1.6;
+}
