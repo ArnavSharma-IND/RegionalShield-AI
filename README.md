@@ -5,8 +5,8 @@
 
 **Omnikon Hackathon 2026** · Track: **Omni_CyberTech_1**  
 **Team: The Null Pointer**
-- **Arnav Sharma** (Lead Architect & Fullstack/ML Systems)
-- **Sourasish Karak** (Indic NLP Linguistics & Forensic Security Research)
+- **Arnav Sharma** 
+- **Sourasish Karak** 
 
 ---
 
