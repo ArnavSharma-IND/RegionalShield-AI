@@ -7,6 +7,7 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies and Build Artifacts
 node_modules
 dist
 dist-ssr
@@ -23,10 +24,28 @@ dist-ssr
 *.sln
 *.sw?
 
-# Environment Variables
+# Environment Variables & Secrets
 .env
 .env.*
 !.env.example
+*.pem
+*.key
 
+# Database and SQLite files
+*.db
+*.sqlite
+*.sqlite3
+
+# Python cache & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+.pytest_cache/
+
+# Large media / PDFs
 *.pdf
-RegionalShield_AI_Phase1_Proposal.pdf
+*.mp4
